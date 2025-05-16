@@ -39,18 +39,19 @@ function updateMusicStatus() {
 
 // Bật / tắt nhạc khi nhấn nút
 function togglePlay() {
-    if (isPlaying) {
-        lullaby.pause();
-        isPlaying = false;
-    } else {
-        lullaby.play().then(() => {
-            isPlaying = true;
-        }).catch((error) => {
-            console.log("Không thể phát nhạc: ", error);
-            isPlaying = false;
-        });
-    }
-    updateMusicStatus();
+    lullaby.play();
+    // if (isPlaying) {
+    //     lullaby.pause();
+    //     isPlaying = false;
+    // } else {
+    //     lullaby.play().then(() => {
+    //         isPlaying = true;
+    //     }).catch((error) => {
+    //         console.log("Không thể phát nhạc: ", error);
+    //         isPlaying = false;
+    //     });
+    // }
+    // updateMusicStatus();
 }
 
 // Gán sự kiện cho nút
