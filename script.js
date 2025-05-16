@@ -4,25 +4,25 @@ const lullaby = document.getElementById('lullaby');
 const playButton = document.getElementById('playButton');
 const musicStatus = document.getElementById('musicStatus');
 
-// Create stars for the night sky
+// Tạo sao trong bầu trời đêm
 for (let i = 0; i < starCount; i++) {
     const star = document.createElement('div');
     star.className = 'star';
-    
+
     const size = Math.random() * 3 + 1;
     star.style.width = `${size}px`;
     star.style.height = `${size}px`;
-    
+
     star.style.left = `${Math.random() * 100}%`;
     star.style.top = `${Math.random() * 100}%`;
-    
+
     star.style.animationDuration = `${Math.random() * 3 + 1}s`;
     star.style.animationDelay = `${Math.random() * 2}s`;
-    
+
     nightSky.appendChild(star);
 }
 
-// Music player functionality
+// Trạng thái nhạc
 let isPlaying = false;
 
 function updateMusicStatus() {
@@ -37,40 +37,31 @@ function updateMusicStatus() {
     }
 }
 
+// Bật / tắt nhạc khi nhấn nút
 function togglePlay() {
     if (isPlaying) {
         lullaby.pause();
         isPlaying = false;
     } else {
-        lullaby.play().catch(function(error) {
+        lullaby.play().then(() => {
+            isPlaying = true;
+        }).catch((error) => {
             console.log("Không thể phát nhạc: ", error);
+            isPlaying = false;
         });
-        isPlaying = true;
     }
     updateMusicStatus();
 }
 
+// Gán sự kiện cho nút
 playButton.addEventListener('click', togglePlay);
 
-// Try autoplay on load (will work on desktop but likely not on mobile)
-window.addEventListener('load', function() {
-    lullaby.play().then(function() {
-        isPlaying = true;
-        updateMusicStatus();
-    }).catch(function(error) {
-        console.log("Không thể tự động phát nhạc: ", error);
-        isPlaying = false;
-        updateMusicStatus();
-    });
-});
-
-// Background color animation
-let hue = 230; 
+// Animation màu nền đêm (chuyển sắc nhẹ nhàng)
+let hue = 230;
 function updateBackgroundColor() {
     document.body.style.backgroundColor = `hsl(${hue}, 65%, 25%)`;
     hue = (hue + 0.1) % 260;
     if (hue < 230) hue = 230;
     requestAnimationFrame(updateBackgroundColor);
 }
-
 updateBackgroundColor();
