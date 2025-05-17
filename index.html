@@ -1,70 +1,126 @@
-<!DOCTYPE html> 
-<html lang="vi">  
-<head>     
-    <meta charset="UTF-8">     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-    <title>Chúc Bé Ngủ Ngon</title>     
-    <meta http-equiv="Content-Security-Policy" content="media-src *; autoplay-policy 'unsafe-autoplay'">     
-    <link rel="stylesheet" href="style.css"> 
-</head>  
-<body>     
-    <div class="night-sky" id="nightSky"></div>      
-    <div class="container">         
-        <div class="moon">             
-            <div class="cloud cloud-1"></div>             
-            <div class="cloud cloud-2"></div>         
-        </div>          
-        <div class="message">             
-            <h1>✨ Chúc Bé Ngủ Ngon ✨</h1>              
-            <div class="animals">                 
-                <div class="animal">🐻</div>                 
-                <div class="animal">🌙</div>                 
-                <div class="animal">🐰</div>             
-            </div>              
-            <p>Cậu ngủ luôn đi nhé </p>             
-            <p>Ngủ sớm cho khỏe ạ </p>             
-            <p>Chúc bạn Huyền xinh gái ngủ ngonnn!!!!😚💖</p>
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngủ ngon nhé !!!</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Security-Policy" content="media-src *; autoplay-policy 'unsafe-autoplay'">
+</head>
+
+<body>
+    <div class="stars" id="stars"></div>
+
+    <div class="beach-scene">
+        <div class="sand"></div>
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+
+        <div class="palm-tree" style="left: 10%;">
+            <div class="trunk"></div>
+            <div class="leaves">
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="coconut" style="top: 90px; left: -5px;"></div>
+                <div class="coconut" style="top: 85px; left: 8px;"></div>
+                <div class="coconut" style="top: 93px; left: 5px;"></div>
+            </div>
+        </div>
+
+        <div class="palm-tree" style="right: 15%; height: 140px;">
+            <div class="trunk"></div>
+            <div class="leaves">
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="coconut" style="top: 90px; left: -5px;"></div>
+                <div class="coconut" style="top: 85px; left: 8px;"></div>
+            </div>
+        </div>
         
-            <div class="sleep-icon">                 
-                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">                     
-                    <circle cx="60" cy="60" r="55" fill="#1a237e" stroke="#5c6bc0" stroke-width="3" />                      
-                    <path d="M75 30C67.5 30 60 33.75 56.25 41.25C60 38.75 65 37.5 70 38.75C80 41.25 86.25 51.25 83.75 61.25C82.5 66.25 78.75 70 75 72.5C82.5 71.25 88.75 65 90 57.5C92.5 47.5 86.25 36.25 75 30Z"
-                        fill="#ffd54f">                         
-                        <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite" />                     
-                    </path>                      
-                    <path d="M35 45L37.5 40L40 45L45 47.5L40 50L37.5 55L35 50L30 47.5L35 45Z" fill="white">                         
-                        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />                     
-                    </path>                     
-                    <path d="M45 65L46.5 62.5L48 65L50.5 66.5L48 68L46.5 70.5L45 68L42.5 66.5L45 65Z" fill="white">                         
-                        <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite" />                     
-                    </path>                      
-                    <ellipse cx="65" cy="80" rx="18" ry="12" fill="#9575cd" />                     
-                    <circle cx="52" cy="75" r="7" fill="#9575cd" />                     
-                    <path d="M50 75C48 73 47 70 47 68C47 65 48 63 50 60C48 61 46 63 45 65C44 67 44 69 44 71C44 73 45 75 47 77C48 78 49 79 50 79"
-                        fill="#7e57c2" />                     
-                    <path d="M54 71C54 69.9 53.1 69 52 69C50.9 69 50 69.9 50 71C50 72.1 50.9 73 52 73C53.1 73 54 72.1 54 71Z"
-                        fill="black" />                     
-                    <path d="M52 75L51 78L53 78Z" fill="#7e57c2" />                      
-                    <text x="75" y="65" font-family="Arial" font-size="10" fill="white" font-weight="bold">z</text>                     
-                    <text x="80" y="60" font-family="Arial" font-size="14" fill="white" font-weight="bold">z</text>                     
-                    <text x="87" y="52" font-family="Arial" font-size="18" fill="white" font-weight="bold">Z</text>                      
-                    <animateTransform xlink:href="#z1" attributeName="transform" type="translate"
-                        values="0,0; 0,-5; 0,0" dur="2s" repeatCount="indefinite" />                     
-                    <animateTransform xlink:href="#z2" attributeName="transform" type="translate"
-                        values="0,0; 0,-8; 0,0" dur="2s" begin="0.3s" repeatCount="indefinite" />                     
-                    <animateTransform xlink:href="#z3" attributeName="transform" type="translate"
-                        values="0,0; 0,-10; 0,0" dur="2s" begin="0.6s" repeatCount="indefinite" />                 
-                </svg>             
-            </div>   
-                        <button id="playButton" class="music-button">
-                <span class="music-icon">🎵</span> Nhạc đây nè . Ấn vô nhá :>>
+        <div class="starfish" style="left: 25%;">
+            <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25,2 L32,17 L48,17 L35,28 L40,45 L25,35 L10,45 L15,28 L2,17 L18,17 Z" fill="#f8bbd0" />
+            </svg>
+        </div>
+        
+        <div class="starfish" style="left: 65%; bottom: 15px;">
+            <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25,2 L32,17 L48,17 L35,28 L40,45 L25,35 L10,45 L15,28 L2,17 L18,17 Z" fill="#ffecb3" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="dream-scene">
+                <div class="moon" id="moon">
+                    <div class="moon-crater" style="width: 15px; height: 15px; top: 20px; left: 15px;"></div>
+                    <div class="moon-crater" style="width: 10px; height: 10px; top: 40px; left: 50px;"></div>
+                    <div class="moon-crater" style="width: 8px; height: 8px; top: 15px; left: 40px;"></div>
+                </div>
+                <div class="cloud"
+                    style="width: 60px; height: 20px; top: 70px; left: 0px; animation-duration: 15s;"></div>
+                <div class="cloud"
+                    style="width: 40px; height: 15px; top: 50px; left: 60px; animation-duration: 20s; animation-delay: 5s;">
+                </div>
+            </div>
+
+            <h1>✨ Nghe chút nhạc rồi ngủ nhá ✨</h1>
+
+            <div class="message">
+                <p>Cậu đi ngủ đi </p>
+                <p>Ngủ sớm cho khỏe nhé ạ</p>
+                <p>Chúc bạn Huyền xinh gái ngủ ngon ạ !💕😚</p>
+            </div>
+
+            <div class="sleep-icons">
+                <div class="sleep-icon">🌴</div>
+                <div class="sleep-icon">🌊</div>
+                <div class="sleep-icon">🐚</div>
+            </div>
+
+            <div class="sleeping-cat">
+                <svg viewBox="0 0 100 70" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="50" cy="50" rx="30" ry="20" fill="#29b6f6" />
+                    <circle cx="30" cy="40" r="12" fill="#29b6f6" />
+                    <path
+                        d="M28 40C25 37 23 32 23 28C23 22 25 18 28 14C25 15 22 18 20 22C18 26 18 30 18 34C18 38 20 42 23 45C25 47 27 48 28 48"
+                        fill="#0288d1" />
+                    <ellipse cx="30" cy="40" rx="3" ry="4" fill="#01579b" />
+                    <ellipse cx="30" cy="42" rx="1" ry="1" fill="white" />
+                </svg>
+                <div class="z-letters">
+                    <div class="z-letter">z</div>
+                    <div class="z-letter">Z</div>
+                    <div class="z-letter">Z</div>
+                </div>
+            </div>
+
+            <button id="playButton" class="music-button">
+                <span class="icon">🎵</span>
+                <span>Nhạc đây nè ! Ấn vô mới bật được </span>
             </button>
-      
-        </div>     
-    </div>      
-    <audio id="lullaby" autoplay="autoplay">         
-        <source src="bed.mp3" type="audio/mp3">     
-    </audio>  
-</body> 
-<script src="script.js"></script>  
+        </div>
+    </div>
+
+    <div class="hearts" id="hearts"></div>
+
+    <audio id="lullaby" loop>
+        <source src="photograph.mp3" type="audio/mp3">
+    </audio>
+
+</body>
+<script src="script.js"></script>
 </html>
